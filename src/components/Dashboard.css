@@ -1,0 +1,59 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-container {
+  background: white;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.image-carousel {
+  margin-top: 20px;
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.image-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  animation: fade 3s infinite;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* Define the spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  animation: spin 10s linear infinite; 
+  display: block;
+  margin: 0 auto;
+}
+
+/* Optionally, style the image container */
+#imageCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  height: 300px; 
+  overflow: hidden;
+}

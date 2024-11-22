@@ -1,0 +1,267 @@
+
+.app-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: rgba(237, 0, 0, 0.16);
+  color:rgb(244, 244, 247);
+}
+
+
+.form-container {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #3e3a3a1c;
+  border-radius: 5px;
+}
+
+.form-container input {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: hwb(260 24% 39%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #202c5cc2;
+}
+
+table {
+  background-color: #191240;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  background-color: hwb(180 98% 1%);
+}
+
+th {
+  background-color: #22d21f;
+}
+
+tr:nth-child(even) {
+
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+
+  background-color: #fbfbfcf7;
+}
+
+button {
+  padding: 6px 12px;
+  margin: 5px;
+  background-color:rgba(0, 0, 0, 0.366);
+  color: rgba(0, 0, 0, 0.558);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9bcce2;
+}
+
+
+tr {
+  transition: all 0.3s ease;
+}
+
+tr td {
+  color: #333;
+}
+
+tr td.low-stock {
+  color: red;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+form input {
+  margin: 5px;
+  padding: 8px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+}
+
+form button {
+  margin-right: 5px;
+  padding: 8px 12px;
+  background-color: hsl(122, 82%, 63%);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #79fd80;
+}
+
+form button[type="button"] {
+  background-color: #f44336;
+}
+
+form button[type="button"]:hover {
+  background-color: #e53935;
+}
+
+body{
+  background-image: url('/public/background.jpg');
+  background-size:cover;
+  background-position: center;
+  min-height: 100vh; 
+  padding: 10px;
+  color: rgb(29, 26, 26); 
+
+
+}
+nav {
+  background-color: #3333333e;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem; /* Space between links */
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  background-color: #3333337e;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffa500;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #ffa500;
+}
+.logout-button {
+  background-color: #30678d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #ca182ac7;
+}
+
+.signup-link {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.signup-link:hover {
+  background-color: #0056b3;
+}
+
+
+/* App.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Form container styles */
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: auto;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #218838;
+}

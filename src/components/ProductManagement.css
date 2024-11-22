@@ -1,0 +1,63 @@
+.product-management-container {
+  background-color: #000;
+  color: rgb(5, 5, 5);
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 1000px; /* Wider container */
+  width: 100%; /* Ensure the container takes full width */
+  margin: auto;
+  min-height: 500px; /* Fixed height for the container */
+}
+
+.product-management-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-management-form input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #222;
+  color: white;
+}
+
+.product-management-form button {
+  padding: 12px;
+  background-color: #444;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-list li {
+  padding: 12px;
+  background-color: #222;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.chart-container {
+  margin-top: 30px;
+  background-color: #111;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%; /* Make chart container span the width */
+  max-width: 600px; /* Set max-width for chart */
+  height: 400px;
+  overflow: hidden;
+  margin: auto; /* Center chart */
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #2222225e;
+  border-radius: 8px;
+}
