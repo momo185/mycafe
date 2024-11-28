@@ -1,3 +1,16 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* Clean modern font */
+  background-image: url('/public/background.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333; /* Neutral text color */
+}
 
 .app-container {
   margin: 0 auto;
@@ -5,263 +18,167 @@
   max-width: 800px;
   text-align: center;
   font-family: Arial, sans-serif;
-  background-color: rgba(237, 0, 0, 0.16);
-  color:rgb(244, 244, 247);
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 12px; /* Rounded corners */
 }
 
-
+/* Forms */
 .form-container {
   margin: 20px 0;
   padding: 15px;
-  border: 1px solid #3e3a3a1c;
-  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .form-container input {
   margin: 10px 0;
-  padding: 8px;
+  padding: 12px;
   width: 100%;
-  box-sizing: border-box;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 1em;
 }
 
 .form-container button {
   padding: 10px 20px;
-  background-color: hwb(260 24% 39%);
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient button */
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 .form-container button:hover {
-  background-color: #202c5cc2;
+  background-color: #4a90e2; /* Slightly lighter on hover */
+  transform: scale(1.05); /* Hover effect */
 }
 
+/* Tables */
 table {
-  background-color: #191240;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  
+  font-size: 1em;
+  border-radius: 10px; /* Rounded corners for table */
+  overflow: hidden; /* Rounded corners apply */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-table, th, td {
-  border: 1px solid #ddd;
-}
-
-th, td {
+table th, table td {
   padding: 12px;
   text-align: left;
-  background-color: hwb(180 98% 1%);
 }
 
-th {
-  background-color: #22d21f;
+table th {
+  background: #4caf50; /* Green header */
+  color: white;
+  text-transform: uppercase; /* Bold header text */
 }
 
-tr:nth-child(even) {
-
-  background-color: #f9f9f9;
+table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05); /* Alternate row color */
 }
 
-tr:hover {
-
-  background-color: #fbfbfcf7;
+table tr:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Hover effect */
+  transition: background-color 0.3s;
 }
 
+/* Buttons */
 button {
-  padding: 6px 12px;
+  padding: 8px 16px;
   margin: 5px;
-  background-color:rgba(0, 0, 0, 0.366);
-  color: rgba(0, 0, 0, 0.558);
+  background: linear-gradient(to right, #4caf50, #81c784); /* Gradient green */
+  color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 button:hover {
-  background-color: #9bcce2;
+  background: #388e3c; /* Slightly darker green */
+  transform: scale(1.05);
 }
 
-
-tr {
-  transition: all 0.3s ease;
-}
-
-tr td {
-  color: #333;
-}
-
-tr td.low-stock {
-  color: red;
-}
-
-form {
-  margin-bottom: 10px;
-}
-
-form input {
-  margin: 5px;
-  padding: 8px;
-  width: calc(100% - 20px);
-  box-sizing: border-box;
-}
-
-form button {
-  margin-right: 5px;
-  padding: 8px 12px;
-  background-color: hsl(122, 82%, 63%);
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #79fd80;
-}
-
-form button[type="button"] {
-  background-color: #f44336;
-}
-
-form button[type="button"]:hover {
-  background-color: #e53935;
-}
-
-body{
-  background-image: url('/public/background.jpg');
-  background-size:cover;
-  background-position: center;
-  min-height: 100vh; 
-  padding: 10px;
-  color: rgb(29, 26, 26); 
-
-
-}
+/* Navigation */
 nav {
-  background-color: #3333333e;
-  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  padding: 10px 20px;
   display: flex;
-  flex-direction: row;
-  gap: 1.5rem; /* Space between links */
-  align-items: center;
   justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
 }
 
 nav a {
-  background-color: #3333337e;
-  color: #fff;
+  color: #fff; /* White text */
   text-decoration: none;
-  padding: 0.5rem;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
-  color: #ffa500;
+  background: #ffa500; /* Orange highlight */
 }
 
 nav a.active {
-  font-weight: bold;
-  color: #ffa500;
-}
-.logout-button {
-  background-color: #30678d;
+  background: #ffa500;
   color: white;
-  border: none;
+}
+
+/* Logout and Signup Buttons */
+.logout-button, .signup-link {
+  text-decoration: none;
   padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.logout-button {
+  background: #e53935; /* Red logout */
+  color: white;
 }
 
 .logout-button:hover {
-  background-color: #ca182ac7;
+  background: #c62828; /* Darker red */
 }
 
 .signup-link {
-  text-decoration: none;
-  background-color: #007bff;
+  background: #1e88e5; /* Blue signup */
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
 }
 
 .signup-link:hover {
-  background-color: #0056b3;
+  background: #1565c0; /* Darker blue */
 }
 
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 15px;
+  }
 
-/* App.css */
+  nav {
+    flex-wrap: wrap;
+  }
 
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+  table th, table td {
+    font-size: 0.9em;
+  }
 
-.App {
-  text-align: center;
-}
-
-nav {
-  margin-bottom: 20px;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Form container styles */
-.form-container {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin: auto;
-}
-
-.form-container h2 {
-  margin-bottom: 20px;
-}
-
-.form-container input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.form-container button {
-  width: 100%;
-  padding: 10px;
-  background-color: #28a745;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.form-container button:hover {
-  background-color: #218838;
+  button {
+    padding: 6px 12px;
+  }
 }

@@ -2,107 +2,107 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  background-color: #f5f5f5; /* Light neutral background for the dashboard */
+  font-family: Arial, sans-serif; /* Clean and modern font */
 }
 
 .card {
-  border: 1px solid #646cff; /* Use a nice border color */
-  border-radius: 8px;
-  padding: 15px;
-  margin: 10px 0;
-  background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+  border: 1px solid #4a90e2; /* Subtle blue border */
+  border-radius: 12px; /* Softer corners */
+  padding: 20px;
+  margin: 15px 0;
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .product-list {
-  border: 1px solid #646cff; /* Border for Product List */
-  border-radius: 8px;
-  padding: 15px;
-  margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+  border: 1px solid #4a90e2; /* Match the blue theme */
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 25px;
+  background-color: #ffffff; /* White for clarity */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .product-list table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 0.9em; /* Adjust font size for better readability */
 }
 
 .product-list th,
 .product-list td {
-  border: 1px solid #ddd; /* Add border to table cells */
-  padding: 10px;
+  border: 1px solid #ddd; /* Border for separation */
+  padding: 12px;
   text-align: left;
 }
 
 .product-list th {
-  background-color: #646cff; /* Header background color */
-  color: white; /* Header text color */
+  background-color: #4a90e2; /* Deep blue for the header */
+  color: white; /* Contrast for header text */
+  text-transform: uppercase; /* Header text in uppercase for emphasis */
+}
+
+.product-list tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row color for readability */
 }
 
 .product-list tr:hover {
-  background-color: rgba(100, 100, 100, 0.2); /* Hover effect for table rows */
+  background-color: #e8f4fc; /* Subtle blue hover effect */
 }
 
 footer {
   text-align: center;
-  margin-top: 20px;
-  color: #646cff; /* Footer color */
+  margin-top: 30px;
+  color: #4a90e2; /* Footer color matching theme */
+  font-size: 0.85em; /* Smaller font size for footer */
 }
-/*new ish*/
+
 /* Button Styles */
 .dashboard-button {
-  border: 2px solid #646cff; /* Border color */
-  border-radius: 8px; /* Rounded corners */
-  padding: 10px 20px; /* Padding inside the button */
-  background-color: transparent; /* Transparent background */
-  color: #646cff; /* Text color */
-  font-size: 1em; /* Font size */
-  font-weight: 500; /* Font weight */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-  margin: 10px; /* Margin between buttons */
+  border: 2px solid #4a90e2; /* Updated to theme blue */
+  border-radius: 12px; /* Softer corners */
+  padding: 12px 24px; /* Adjusted padding for better proportions */
+  background-color: #ffffff; /* White background */
+  color: #4a90e2; /* Blue text color */
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Add smooth animation */
+  margin: 10px;
 }
 
 .dashboard-button:hover {
-  background-color: #646cff; /* Background color on hover */
-  color: white; /* Text color on hover */
+  background-color: #4a90e2; /* Blue hover background */
+  color: white; /* White hover text */
+  transform: translateY(-2px); /* Slight lift effect */
 }
-/*new2/
+
 /* Button Section Styles */
 .button-section {
-  display: flex; /* Align buttons in a row */
-  justify-content: space-around; /* Space between buttons */
-  margin: 20px 0; /* Margin above and below the section */
+  display: flex; /* Align buttons horizontally */
+  justify-content: space-evenly; /* Even space between buttons */
+  margin: 25px 0; /* Adjusted margin for balance */
 }
 
-.dashboard-button {
-  border: 2px solid #646cff; /* Border color */
-  border-radius: 8px; /* Rounded corners */
-  padding: 10px 20px; /* Padding inside the button */
-  background-color: transparent; /* Transparent background */
-  color: #646cff; /* Text color */
-  font-size: 1em; /* Font size */
-  font-weight: 500; /* Font weight */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-  margin: 10px; /* Margin between buttons */
-}
-
-.dashboard-button:hover {
-  background-color: #646cff; /* Background color on hover */
-  color: white; /* Text color on hover */
-}
-
-/* src/components/Dashboard.css */
+/* Navigation Link Styles */
 .nav-link {
-    margin-right: 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .dashboard-link {
-    color: #4CAF50; /* Green for Dashboard */
-  }
-  
-  .user-management-link {
-    color: #2196F3; /* Blue for User Management */
-  }
-  
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #555; /* Neutral text color for navigation links */
+  font-size: 1em;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #4a90e2; /* Blue highlight on hover */
+}
+
+.dashboard-link {
+  color: #4caf50; /* Green for Dashboard */
+}
+
+.user-management-link {
+  color: #2196f3; /* Blue for User Management */
+}
