@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', Arial, sans-serif; /* Clean modern font */
+  font-family: 'Roboto', Arial, sans-serif; /* Clean, modern font */
   background-image: url('/public/background.jpg'); /* Background image */
   background-size: cover;
   background-position: center;
@@ -9,112 +9,111 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #333; /* Neutral text color */
+  color: #444; /* Neutral text color */
 }
 
 .app-container {
   margin: 0 auto;
-  padding: 20px;
-  max-width: 800px;
+  padding: 25px;
+  max-width: 850px;
   text-align: center;
-  font-family: Arial, sans-serif;
   background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Elegant shadow */
   color: #333;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  border-radius: 12px; /* Rounded corners */
 }
 
 /* Forms */
 .form-container {
   margin: 20px 0;
-  padding: 15px;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  background: rgba(240, 240, 250, 0.95); /* Soft background */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .form-container input {
   margin: 10px 0;
   padding: 12px;
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
   font-size: 1em;
 }
 
 .form-container button {
-  padding: 10px 20px;
-  background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient button */
+  padding: 12px 24px;
+  background: linear-gradient(to right, #1e90ff, #00bfff); /* Cool gradient blue */
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
 }
 
 .form-container button:hover {
-  background-color: #4a90e2; /* Slightly lighter on hover */
+  background-color: #4682b4; /* Slightly darker blue */
   transform: scale(1.05); /* Hover effect */
 }
 
 /* Tables */
 table {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  background-color: rgba(250, 250, 250, 0.95); /* Lighter table background */
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
   font-size: 1em;
-  border-radius: 10px; /* Rounded corners for table */
+  border-radius: 12px; /* Rounded corners */
   overflow: hidden; /* Rounded corners apply */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Elegant shadow */
 }
 
 table th, table td {
-  padding: 12px;
+  padding: 14px;
   text-align: left;
 }
 
 table th {
-  background: #4caf50; /* Green header */
+  background: #1e90ff; /* Vibrant blue header */
   color: white;
   text-transform: uppercase; /* Bold header text */
 }
 
 table tr:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.05); /* Alternate row color */
+  background-color: rgba(0, 0, 0, 0.03); /* Alternate row color */
 }
 
 table tr:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Hover effect */
+  background-color: rgba(0, 0, 0, 0.08); /* Hover effect */
   transition: background-color 0.3s;
 }
 
 /* Buttons */
 button {
-  padding: 8px 16px;
+  padding: 10px 20px;
   margin: 5px;
-  background: linear-gradient(to right, #4caf50, #81c784); /* Gradient green */
+  background: linear-gradient(to right, #1e90ff, #00bfff); /* Cool gradient */
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s, background-color 0.3s;
 }
 
 button:hover {
-  background: #388e3c; /* Slightly darker green */
+  background: #4682b4; /* Darker blue */
   transform: scale(1.05);
 }
 
 /* Navigation */
 nav {
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
   padding: 10px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* Align links to the right */
   gap: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 nav a {
@@ -123,45 +122,48 @@ nav a {
   padding: 10px 15px;
   font-size: 1em;
   font-weight: bold;
-  border-radius: 6px;
-  transition: background-color 0.3s;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
   background: #ffa500; /* Orange highlight */
+  transform: scale(1.1); /* Hover effect */
 }
 
 nav a.active {
-  background: #ffa500;
+  background: #1e90ff; /* Highlight active link */
   color: white;
 }
 
 /* Logout and Signup Buttons */
-.logout-button, .signup-link {
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-size: 1em;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
 .logout-button {
-  background: #e53935; /* Red logout */
+  background: #ff6347; /* Tomato red logout */
   color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .logout-button:hover {
-  background: #c62828; /* Darker red */
+  background: #e53935; /* Darker red */
 }
 
 .signup-link {
-  background: #1e88e5; /* Blue signup */
+  background: #32cd32; /* Lime green signup */
   color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .signup-link:hover {
-  background: #1565c0; /* Darker blue */
+  background: #2e8b57; /* Forest green */
+  transform: scale(1.05); /* Hover effect */
 }
 
 /* Responsive Adjustments */
@@ -179,6 +181,6 @@ nav a.active {
   }
 
   button {
-    padding: 6px 12px;
+    padding: 8px 14px;
   }
 }
